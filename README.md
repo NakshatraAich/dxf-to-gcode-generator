@@ -41,6 +41,8 @@ python server.py
 - Copy the GCode from the section at the bottom of the page
 ![DXF to GCode Generator UI](documentation-images/gcode.png)
 
+- Paste this code in the requirement terminal in your software of choice (Mainsail, Fluidd, Repetier-Host)
+
 ### Steps to make modifications to the generated gcode
 - Open dxf_tool.py
 - Make changes to generate_gcode function to create custom gcode sequence (Current example is given for a personal usecase)
