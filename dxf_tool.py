@@ -5,7 +5,6 @@ import math
 import ezdxf
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.neighbors import NearestNeighbors
 # importing all libraries
 
 # defining the dxfsegment class
@@ -193,14 +192,6 @@ def plot_segments(segments):
     ax.grid(True)
     ax.set_title("DXF Geometry with Vertices")
     plt.show()
-
-''' === COLOR LEGEND ===
- 'k-'  : black line       : for line/polyline/arc segments
- 'ro'  : red circle       : for segment vertices (start/end points)
- 'g--' : green dashed     : for arcs (visualizing curvature)
- 'bo'  : blue circle      : for circle outline points
- 'rx'  : red X marker     : for circle or arc centers (if used)
-'''
 
 def plot_interpolated_points(points):
     xs, ys = zip(*points)
@@ -437,7 +428,6 @@ if __name__ == "__main__":
     print_segments(segments)
 
     interpolated_points = interpolate_segments(segments, step=0.5)[::30]
-
 
     # === Transformations ===
     interpolated_points = reorder_path(interpolated_points, (67.50, 60.50))
