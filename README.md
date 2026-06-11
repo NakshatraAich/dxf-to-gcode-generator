@@ -35,7 +35,7 @@ python server.py
 
 - Upload the .dxf file in the UI
 ![DXF to GCode Generator UI](documentation-images/empty.png)
-![DXF to GCode Generator UI](documentation-images/empty.png)
+![DXF to GCode Generator UI](documentation-images/process.png)
 - Apply parameters as required and press Process DXF
 ![DXF to GCode Generator UI](documentation-images/result.png)
 - Copy the GCode from the section at the bottom of the page
